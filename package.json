@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development"
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "server": "nodemon server/bin/entry.js"
   },
   "repository": "https://github.com/thejhnny/portfolio.git",
   "author": "Johnny Siu <siujohnny@gmail.com>",
@@ -20,7 +21,18 @@
     "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.18.3",
+    "css-loader": "^1.0.0",
+    "express": "^4.16.3",
+    "file-loader": "^1.1.11",
+    "node-sass": "^4.9.2",
+    "nodemon": "^1.18.3",
+    "path": "^0.12.7",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0"
   }
 }
